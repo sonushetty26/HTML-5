@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>(
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5 CANVAS TAG</title>
+</head>
+<body>
+    <center>
+        <h1>CANVAS TAG</h1>
+        <p>The HTML canvas elements provides HTML a bitmaps surface to work with.It is used to draw graphics on a web page.</p>
+        <h2>Why HTML-5 canvas tag is used..?</h2>
+        <p>The HTML-5 canvas tag is used to draw graphics using scripting language like javascript</p>
+    </center>
+    <hr>
+    <h1>THIS IS  FIRST CANVAS TAG</h1>
+    <canvas id="Canvas" width="200px" height="100px" style="border:2px solid blue;"></canvas>
+    <hr>
+    
+    <canvas id="Canvas1" width="300px" height="200px" style="border:3px solid aqua;"></canvas>
+    <script>
+        let c = document.getElementById("Canvas1").getContext("2d");
+        c.fillStyle="green";
+        c.fillRect(45, 45, 200, 100);
+    </script>
+
+    <hr>
+
+    <h1>THIS IS  CIRCLE CANVAS TAG</h1>
+    <canvas id="myCanvas" width="400px" height="200px" style="border:6px solid teal;"></canvas>
+    <script>
+        let e = document.getElementById("myCanvas").getContext("2d");
+        e.strokeStyle="black";
+        e.fillStyle="red";
+        e.arc(200, 100, 90, 0, 2 * Math.PI);
+       e.fill();
+       e.stroke();
+    </script>
+
+    <hr>
+    <h1>THIS IS DRAW TEXT ON CANVAS TAG</h1>
+    <canvas id="canText" width="578px" height="200px" style="border:2px solid blueviolet;"></canvas>
+    <script>
+        var canvas = document.getElementById("canText").getContext("2d");
+        canvas.font = "20pt Times New Roman";
+        canvas.fillStyle = "red";
+        canvas.fillText("HELLO WORLD" , 150, 100);
+    </script>
+
+ </body>
+</html>

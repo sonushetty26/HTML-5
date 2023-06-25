@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>HTML-5 PROGRESS TAG</title>
+</head>
+<body>
+    <!--creating a progress tag-->
+    <center>
+        <h1>PROGRESS TAG..!</h1>
+    </center>
+    <hr>
+    <!--progress tag contains 3 more tags they are default,static and dynamic tag-->
+    <h2>DEFAULT PROGRESS TAG..!</h2>
+    <progress>progress</progress>
+
+    <h2>STATIC PROGRESS TAG..!</h2>
+    <progress min="1" max="100" value="20"></progress>
+
+    <h2>DYNAMIC PROGRESS TAG..!</h2>
+    <progress min="1" max="100" id="progress"></progress>
+<script>
+    let gmin=100;
+    function callProgress(){
+        if (gmin<=100){
+        gmin--;
+
+        document.getElementById("progress").value=gmin;
+    }
+}
+//callprogress();
+    setInterval("callProgress();",1000);
+</script>
+</body>
+</html>
